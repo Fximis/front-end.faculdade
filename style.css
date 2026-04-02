@@ -1,0 +1,84 @@
+/* Configurações Gerais */
+body {
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.904), rgba(14, 13, 13, 0.938), rgba(0, 0, 0, 0.863));
+    background-attachment: fixed;
+    color: #bdb9b9;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 1px 5px #030303;
+    margin-bottom: 50px;
+}
+
+
+.container-atividades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.card-link {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc, #00d4ff);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 40px; 
+    text-align: center;
+    position: relative; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    text-shadow: 2px 1px 5px #030303cc;
+}
+
+
+.card-link:hover {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc, #00d4ff);
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    z-index: 999;
+}
+
+
+.preview {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 150px;
+    background: #fff;
+    border: 4px solid #6a11cb;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.card-link:hover .preview {
+    display: block;
+    z-index: 1000;
+}
+
+@media (max-width: 900px) {
+    .container-atividades {
+        grid-template-columns: 1fr;
+    }
+}
