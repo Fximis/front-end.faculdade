@@ -7,7 +7,7 @@ const estados = {
     normal: "Imagens-Mascote/Compactada/Mascote.png",
     feliz: "Imagens-Mascote/Compactada/mascote-feliz.png",
     irritado:"Imagens-Mascote/Compactada/Mascote-odio.png",
-    comendo: "Imagens-Mascote/Compactada/mascote-comendo.png",
+    comendo: "Imagens-Mascote/Compactada/Mascote-comendo.png",
     comida: "Imagens-Mascote/Compactada/mascote-comida-favorita.png",
     morto: "Imagens-Mascote/Compactada/Mascote-morto.png",
 
